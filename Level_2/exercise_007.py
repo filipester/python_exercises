@@ -15,8 +15,9 @@ entrada = "3,5"
 digitos = [int(x) for x in entrada.split(",")]
 linhas = digitos[0]
 colunas = digitos[1]
-arr = [[0 for coluna in range(colunas)] for linha in range(linhas)]
+arr = [[0 for coluna in range(colunas)] for linha in range(linhas)] # cria uma matriz de 0s
 
+# os loops abaixo populam a matriz criada anteriormente
 for linha in range(linhas):
     for coluna in range(colunas):
         arr[linha][coluna] = linha*coluna
