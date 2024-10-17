@@ -15,7 +15,7 @@
 # numeros = [x for x in input("Digite os números separados por virgulas: ").split(',')] # isso já funciona
 numeros = "0000,0010,0101,0110,1010,1101,1000,1111,0100,1001".split(',')
 
-divisiveis = [elem for elem in numeros if (int(elem,2) % 5 == 0)]
+divisiveis = [elem for elem in numeros if (int(elem,2) % 5 == 0)] # int(elem,2) converte da base binária para decimal
 
 print(f"Sequência de binários: {numeros}")
 
